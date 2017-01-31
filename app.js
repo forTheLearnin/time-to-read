@@ -27,6 +27,7 @@ function getMean(args) {
 function setState(args) {
   document.getElementById('readTime').innerHTML = readTime(args || 230);
   document.getElementById('currentWPM').innerHTML = fetchCurrentWPM(230);
+  document.getElementById('input').value = 230;
 }
 
 setState();
