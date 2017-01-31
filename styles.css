@@ -1,0 +1,28 @@
+#header {
+  text-align: center;
+  font-size: 30px;
+}
+
+#currentContainer {
+  margin: 0 auto;
+  width: 800px;
+}
+
+#contentContainer {
+  width: 800px;
+  height: 800px;
+  border: 1px solid slategray;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#content {
+  width: 800px;
+  height: 800px;
+}
+
+#form {
+  margin: 0 auto;
+  text-align: right;
+  max-width: 800px;
+}

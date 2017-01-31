@@ -3,24 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Time-To-Read</title>
+
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <div>Read time: <span id="readTime"></span> minutes</div>
+  <div id="header">Read time: <span id="readTime"></span> minutes</div>
 
-  <div id="content">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+  <div id="currentContainer">Current WPM: <span id="currentWPM"></span></div>
+  <div id="contentContainer">
+    <textarea id="content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum illo sed cupiditate nisi a id reprehenderit atque praesentium delectus, dignissimos temporibus repudiandae maiores rem eaque rerum. Fugit, numquam, iure.
+    </textarea>
   </div>
 
+
   <form action="submit" id="form">
-    <input type="text" name="wpm">
+    <span>Change your WPM: </span>
+    <input id="input" type="text" name="wpm" />
     <button id="submit">Submit</button>
   </form>
 
